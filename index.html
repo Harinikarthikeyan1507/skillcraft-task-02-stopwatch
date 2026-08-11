@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Task 02 - Stopwatch Web Application</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Main Stopwatch Application -->
+    <div class="app">
+
+        <!-- Header -->
+        <header class="header">
+            <h1>STOPWATCH</h1>
+            <p>Task 02 • SkillCraft Technology</p>
+        </header>
+
+        <!-- Stopwatch Card -->
+        <main class="stopwatch-card">
+
+            <div class="timer">
+                <span id="minutes">00</span>
+                <span class="colon">:</span>
+                <span id="seconds">00</span>
+                <span class="colon">:</span>
+                <span id="milliseconds">000</span>
+            </div>
+
+            <div class="labels">
+                <span>MINUTES</span>
+                <span>SECONDS</span>
+                <span>MILLISECONDS</span>
+            </div>
+
+            <!-- Buttons -->
+            <div class="buttons">
+
+                <button id="startBtn" class="start">
+                    ▶️ Start
+                </button>
+
+                <button id="pauseBtn" class="pause" disabled>
+                    ⏸️ Pause
+                </button>
+
+                <button id="lapBtn" class="lap" disabled>
+                    🏁 Lap
+                </button>
+
+                <button id="resetBtn" class="reset">
+                    🔄 Reset
+                </button>
+
+            </div>
+
+        </main>
+
+        <!-- Lap Times -->
+        <section class="laps-section">
+
+            <div class="laps-title">
+                <h2>Lap Times</h2>
+
+                <span id="lapCount">
+                    0 Laps
+                </span>
+            </div>
+
+            <p id="emptyMessage">
+                No lap times recorded yet.
+            </p>
+
+            <ol id="lapList"></ol>
+
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>
+                Built with HTML, CSS & JavaScript
+            </p>
+
+            <p>
+                SkillCraft Technology • Task 02
+            </p>
+        </footer>
+
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
